@@ -1,0 +1,26 @@
+.rose-item {
+  flex: 1;
+  background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+  max-width: 500px;
+  height: 700px;
+  position: relative;
+  margin: 20px auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #888;
+}
+
+/* styling text content */
+.rose-content {
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 25px;
+  font-size: 19px;
+  white-space: pre-wrap;
+}
+
+.rose-date {
+  font-size: 12px;
+  margin: 0;
+}
