@@ -37,7 +37,7 @@ class Login extends Component {
         localStorage.status = 'valid'
         localStorage.authToken = data.authToken
         this.context.setStatus('valid')
-        this.props.history.push('/gardn')
+        this.props.history.push('/mygardn')
       })
       .catch(error => {
         this.setState({ error })
@@ -59,7 +59,7 @@ class Login extends Component {
           </div>
           <div>
             <label htmlFor="password">Password</label>
-            <input type="password" name='password' id='password' defaultValue='Roses123!'/>
+            <input type="password" name='password' id='password' defaultValue='Rose123!'/>
           </div>
           <button type='submit'>
             Login
@@ -72,7 +72,7 @@ class Login extends Component {
           <p>
             Use the login info below to demo the app:<br/>
             Username: rosedude<br/>
-            Password: Roses123!
+            Password: Rose123!
           </p>
         </div>
       </div>

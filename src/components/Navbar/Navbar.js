@@ -24,10 +24,10 @@ class Nav extends Component {
           <li className="line"></li>
         </ul>
         <ul className="nav">
-          {localStorage.status ? (
+          {this.context.status ? (
             <div>
               <li className="nav-item">
-                <Link to="/gardn">My Gardn</Link>
+                <Link to="/mygardn">My Gardn</Link>
               </li>
               <li className="nav-item">
                 <Link to="/add-rose">Add New Rose</Link>

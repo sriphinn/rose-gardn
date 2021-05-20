@@ -11,11 +11,11 @@ export default function RoseItem(props) {
         {props.name}
       </h3>
       <p className='rose-type'>
-        {props.type}
+        {props.type_name}
       </p>
       <p className='rose-date'>
         Date added:<br/>
-        {moment(props.date_added).format("MM DD YYYY")}
+        {moment(props.date).format("MM DD YYYY")}
       </p>
       </div>
       <div className='rose-buttons'>

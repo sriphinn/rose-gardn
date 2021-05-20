@@ -1,8 +1,8 @@
-.rose-item {
+.log-item {
   flex: 1;
   background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
-  max-width: 300px;
-  height: 200px;
+  max-width: 200px;
+  height: 100px;
   position: relative;
   margin: 20px auto;
   padding-top: 40px;
@@ -12,7 +12,7 @@
 }
 
 /* styling text content */
-.rose-content {
+.log-notes {
   padding-left: 5%;
   padding-right: 5%;
   line-height: 25px;
@@ -20,7 +20,7 @@
   white-space: pre-wrap;
 }
 
-.rose-date {
+.log-date {
   font-size: 12px;
   margin: 0;
 }

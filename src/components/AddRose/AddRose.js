@@ -11,14 +11,15 @@ class AddRose extends Component {
 
   state = {
     error: null,
+    // fileInputState = ''
   };
 
   handleSubmit = e => {
     e.preventDefault()
-    const { name, type, color, date } = e.target
+    const { name, type_name, color, date } = e.target
     const rose = {
       name: name.value,
-      type: type.value,
+      type_name: type_name.value,
       color: color.value,
       date: date.value
     }
@@ -41,10 +42,9 @@ class AddRose extends Component {
       })
       .then(data => {
         name.value = ''
-        type.value = ''
+        type_name.value = ''
         color.value = ''
         date.value = ''
-        this.context.addPost(data)
         this.props.history.push('/mygardn')
       })
       .catch(error => {
@@ -52,6 +52,9 @@ class AddRose extends Component {
       })
   }
 
+  handleFileInputChange = e => {
+
+  }
 
   handleClickCancel = () => {
     this.props.history.push('/mygardn')
@@ -64,6 +67,13 @@ class AddRose extends Component {
         <h3>
           Add New Rose
         </h3>
+        {/* <div className='upload-rose-image'>
+          <h4>Upload Image</h4>
+          <form>
+            <input type='file' name='image' onChange={handleFileInputChange} value={} />
+            <button type='button'>Upload</button>
+          </form>
+        </div> */}
         <form
           className='add-rose-form'
           onSubmit={this.handleSubmit}
@@ -72,22 +82,22 @@ class AddRose extends Component {
             {error && <p>{error.message}</p>}
           </div>
           <div>
-            <label htmlFor='Name'>
+            <label htmlFor='name'>
               Name
             </label>
             <TextareaAutosize
               type='text'
-              name='Name'
-              id='Name'
+              name='name'
+              id='name'
               placeholder='Cultivar Name'
               required
             />
           </div>
           <div>
-            <label htmlFor='type'>
+            <label htmlFor='type_name'>
               Type
             </label>
-            <select name='type'>
+            <select name='type_name'>
               <optgroup label='Modern'>
                 <option value='Canadian Hardy'>Canadian Hardy</option>
                 <option value='Climbing'>Climbing</option>
@@ -120,8 +130,8 @@ class AddRose extends Component {
             </label>
             <select name='color'>
               <option value='Apricot'>Apricot</option>
-              <option value='Multi-Color'>Multi-Color</option>
               <option value='Orange'>Orange</option>
+              <option value='Multi-Color'>Multi-Color</option>
               <option value='Pink'>Pink</option>
               <option value='Purple'>Purple</option>
               <option value='Red'>Red</option>

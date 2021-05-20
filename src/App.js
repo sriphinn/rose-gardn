@@ -10,6 +10,10 @@ import MyGardn from './components/MyGardn/MyGardn';
 import AddRose from './components/AddRose/AddRose';
 import EditRose from './components/EditRose/EditRose';
 import DeleteRose from './components/DeleteRose/DeleteRose';
+import RoseLog from './components/RoseLog/RoseLog';
+import AddLog from './components/AddLog/AddLog';
+import EditLog from './components/EditLog/EditLog';
+import DeleteLog from './components/DeleteLog/DeleteLog';
 
 
 export default class App extends Component {
@@ -18,9 +22,16 @@ export default class App extends Component {
     status: localStorage.status
   }
 
+  setStatus = status => {
+    this.setState({
+      status
+    })
+  }
+
   render() {
     const contextValue = {
-      status: this.state.status
+      status: this.state.status,
+      setStatus: this.setStatus
     }
     return (
       <div className='App'>
@@ -34,10 +45,10 @@ export default class App extends Component {
             <Route path='/add-rose' component={AddRose} />
             <Route path='/edit-rose/:id' component={EditRose} />
             <Route path='/delete-rose/:id' component={DeleteRose} />
-            {/* <Route path='/rose-log/:id' component={RoseLog}/>
-            <Route path='/add-note/:id' component={AddNote} />
-            <Route path='/edit-note/:id' component={EditNote} />
-            <Route path='/delete-note/:id' component={DeleteNote} /> */}
+            <Route path='/rose-log/:id' component={RoseLog}/>
+            <Route path='/add-log/:id' component={AddLog} />
+            <Route path='/edit-log/:roseId/:id' component={EditLog} />
+            <Route path='/delete-log/:roseId/:id' component={DeleteLog} />
           </AppContext.Provider>
         </main>
       </div>

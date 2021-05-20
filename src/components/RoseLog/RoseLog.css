@@ -1,0 +1,7 @@
+.rose-log {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+

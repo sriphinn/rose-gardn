@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import config from '../../config';
 import './EditRose.css';
+import moment from 'moment';
 
 function EditRose(props) {
   const [error, setError] = useState('')
@@ -28,17 +29,17 @@ function EditRose(props) {
 
   const handleSubmit = e => {
     e.preventDefault()
-    const { name, type, color, date } = e.target
-    const post = {
+    const { name, type_name, color, date } = e.target
+    const rose = {
       name: name.value,
-      type: type.value,
+      type_name: type_name.value,
       color: color.value,
       date: date.value
     }
     setError(null)
-    fetch(config.API_ENDPOINT + "/posts/" + props.match.params.id, {
+    fetch(config.API_ENDPOINT + "/roses/" + props.match.params.id, {
       method: 'PATCH',
-      body: JSON.stringify(post),
+      body: JSON.stringify(rose),
       headers: {
         'content-type': 'application/json',
         'Authorization': `Bearer ${localStorage.authToken}`
@@ -54,7 +55,7 @@ function EditRose(props) {
       })
       .then(data => {
         name.value = ''
-        type.value = ''
+        type_name.value = ''
         color.value = ''
         date.value = ''
         props.history.push('/mygardn')
@@ -68,6 +69,8 @@ function EditRose(props) {
     props.history.push('/mygardn')
   }
 
+  const date = rose.date ? moment(rose.date).format('YYYY-MM-DD') : null 
+  
   return (
     <div className='edit-rose'>
       <h2>Edit</h2>
@@ -86,10 +89,11 @@ function EditRose(props) {
           <input type='text' name='name' id='name' defaultValue={rose.name} />
         </div>
         <div>
-          <label htmlFor='type'>
+          <label htmlFor='type_name'>
             Type
             </label>
-          <select name='type' defaultValue={rose.type}>
+          <select name='type_name' defaultValue={rose.type_name}>
+              <option value={rose.type_name}>{rose.type_name}</option>
             <optgroup label='Modern'>
               <option value='Canadian Hardy'>Canadian Hardy</option>
               <option value='Climbing'>Climbing</option>
@@ -120,7 +124,8 @@ function EditRose(props) {
           <label htmlFor='color'>
             Dominant Color
             </label>
-          <select name='color' defaultValue={rose.color}>
+          <select name='color'>
+            <option value={rose.color}>{rose.color}</option>
             <option value='Apricot'>Apricot</option>
             <option value='Multi-Color'>Multi-Color</option>
             <option value='Orange'>Orange</option>
@@ -133,7 +138,7 @@ function EditRose(props) {
         </div>
         <div className='date-added'>
           <label htmlFor="date">Date Added</label>
-          <input type="date" name="date" defaultValue={rose.date} />
+          <input type="date" name="date" defaultValue={date} />
         </div>
         <div className='edit-rose-buttons'>
           <button type='button' onClick={handleClickCancel}>
