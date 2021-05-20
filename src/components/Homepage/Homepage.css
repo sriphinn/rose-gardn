@@ -14,11 +14,10 @@ html {
 }
 
 .header-container img {
-  height: auto;
+  height: 75%;
   width: 100%;
   position: relative;
   align-items: center;
-  opacity: 0.9;
 } 
 
 .body-description {

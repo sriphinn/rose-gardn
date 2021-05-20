@@ -1,12 +1,11 @@
 .rose-item {
   flex: 1;
-  background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
   max-width: 300px;
-  height: 200px;
+  height: auto;
   position: relative;
   margin: 20px auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: white;
   box-shadow: 0px 0px 5px 0px #888;
 }

@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  padding: 0 2.5%;
+}
+
+nav img {
+  max-width: 100px;
+  padding: 10% 0 5% 0;
+}
+
+.nav-links{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: right;
+  list-style: none;
+}
+
+footer {
+  margin: 5% 0 auto;
+  padding-top: 15px;
+  text-align: center;
+  border-top: 2px solid black;
+}
+
+footer a {
+  color: black;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color:#F72777;
+}
+
+* { 
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
+  font-family: 'Courier', monospace;
+}
+
+/* Form  */
+
+form {
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  border-style: solid;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 0 16px;
+  margin: 16px 0; 
+  height: 44px;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 6px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin: 2.5%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(221,238,187);
+  color: black;
+}
