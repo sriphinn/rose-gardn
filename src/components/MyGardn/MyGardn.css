@@ -1,7 +1,11 @@
-.my-gardn {
+/* .my-gardn {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   margin-bottom: 30px;
-}
+} */
 
+.add-rose-button {
+  width: fit-content;
+  margin-top: 10px;
+}

@@ -15,9 +15,14 @@ class Nav extends Component {
   render() {
     return (
       <nav className='navbar'>
-        <Link to='/'>
-          <img className="logo-image" src={Logo} alt="ROSE GARDN" />
-        </Link>
+        <div className='nav-logo'>
+          <Link to='/'>
+            <img className="logo-image" src={Logo} alt="ROSE GARDN" />
+          </Link>
+          <Link to='/'>
+            <h1>ROSEGARDN</h1>
+          </Link>
+        </div>
         <ul className="hamburger">
           <li className="line"></li>
           <li className="line"></li>
@@ -25,7 +30,7 @@ class Nav extends Component {
         </ul>
         <ul className="nav">
           {this.context.status ? (
-            <div>
+            <>
               <li className="nav-item">
                 <Link to="/mygardn">My Gardn</Link>
               </li>
@@ -37,16 +42,16 @@ class Nav extends Component {
                   Logout
                 </Link>
               </li>
-            </div>
+            </>
           ) : (
-            <div>
+            <>
               <li className="nav-item">
                 <Link to="/signup">Sign Up</Link>
               </li>
               <li className="nav-item">
                 <Link to="/login">Login</Link>
               </li>
-            </div>
+            </>
           )}
         </ul>
       </nav>

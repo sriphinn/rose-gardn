@@ -14,7 +14,7 @@ export default function LogItem(props) {
         {props.notes}
       </p>
       <p className='log-date'>
-        Date added:<br/>
+        Date:<br/>
         {moment(props.date).format("MM DD YYYY")}
       </p>
       </div>

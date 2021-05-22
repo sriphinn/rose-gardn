@@ -1,11 +1,11 @@
 .log-item {
   flex: 1;
-  max-width: 200px;
+  max-width: 300px;
   height: auto;
   position: relative;
   margin: 20px auto;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   background-color: white;
   box-shadow: 0px 0px 5px 0px #888;
 }
@@ -14,7 +14,6 @@
 .log-notes {
   padding-left: 5%;
   padding-right: 5%;
-  line-height: 25px;
   font-size: 14px;
   white-space: pre-wrap;
 }

@@ -4,6 +4,7 @@ import './AddRose.css';
 import AppContext from '../../AppContext';
 import config from '../../config';
 import TextareaAutosize from 'react-textarea-autosize';
+import image from '../../images/add-rose-header.JPG';
 
 
 class AddRose extends Component {
@@ -64,16 +65,10 @@ class AddRose extends Component {
     const { error } = this.state
     return (
       <section className='AddRose'>
+        <img src={image} alt='small rose bud surrounded by new foliage' />
         <h3>
           Add New Rose
         </h3>
-        {/* <div className='upload-rose-image'>
-          <h4>Upload Image</h4>
-          <form>
-            <input type='file' name='image' onChange={handleFileInputChange} value={} />
-            <button type='button'>Upload</button>
-          </form>
-        </div> */}
         <form
           className='add-rose-form'
           onSubmit={this.handleSubmit}

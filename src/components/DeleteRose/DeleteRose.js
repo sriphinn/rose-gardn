@@ -37,7 +37,7 @@ class DeleteRose extends Component {
     const error = this.state.error
     return (
       <div className='delete-rose'>
-        <h2>Are you sure you want to delete this rose?</h2>
+        <h3>Are you sure you want to delete this rose?</h3>
         
           <div className='delete-rose-error' role='alert'>
           { error && <p>{ error.message }</p>}

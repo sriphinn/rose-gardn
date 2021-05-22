@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './MyGardn.css';
 import RoseItem from '../RoseItem/RoseItem';
 import config from '../../config';
+import image from '../../images/my-roses-header.jpg';
 
 class MyGardn extends Component {
   state = {
@@ -35,8 +36,9 @@ class MyGardn extends Component {
   render() {
     return (
       <div className='my-gardn'>
+        <img src={image} alt='cluster of pink, yellow and white roses' />
         <h2>
-          MY ROSE GARDN
+          MY ROSES
         </h2>
         <ul className='my-gardn-list'>
           {this.state.roses.map(rose =>

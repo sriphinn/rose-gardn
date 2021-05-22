@@ -9,7 +9,7 @@ class Homepage extends Component {
       <div className='homepage'>
 
         <section className='header-container'>
-          <img src={Image} alt='notebook and pen with refracted light' />
+          <img src={Image} alt='rose garden with fountain in the middle' />
         </section>
         
         <section className="about">
@@ -17,15 +17,17 @@ class Homepage extends Component {
             Welcome to the ROSE GARDN!
           </h3>
           <p>
-            ROSE GARDN is an gathering place for rosarians, obsessed rose addicts and casual rose enthusiasts to share and keep track of the roses in their gardens.<br /> 
+            ROSE GARDN is an app for <br/>
+            rosarians, obsessed rose addicts and casual rose enthusiasts <br/>
+            to share and keep track of the roses in their gardens.<br /> 
           </p>
         </section>
 
         <section className='howto'>
           <p>
-            In the ROSE GARDN you'll be able to upload photos of your roses and keep a log of each.<br />
+            In the ROSE GARDN you'll be able to add your roses and keep an activity log of each one.<br />
             No more guessing when you last watered, fertilized or pruned your roses.<br/>
-            You'll also be able to see other users photos and sort by cultivar, color and more.
+            {/* You'll also be able to see other users photos and sort by cultivar, color and more. */}
           </p>
         </section>
 

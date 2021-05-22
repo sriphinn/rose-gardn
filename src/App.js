@@ -51,6 +51,10 @@ export default class App extends Component {
             <Route path='/delete-log/:roseId/:id' component={DeleteLog} />
           </AppContext.Provider>
         </main>
+        <footer>
+          ROSEGARDN<br/>
+          <a href="https://phinn.dev/">&copy; Phinn Sriployrung 2021</a>
+        </footer>
       </div>
     )
   }

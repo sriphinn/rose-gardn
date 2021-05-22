@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './RoseLog.css';
 import LogItem from '../LogItem/LogItem';
 import config from '../../config';
+import image from '../../images/rose-log-header.JPG';
 
 class MyGardn extends Component {
   state = {
@@ -35,9 +36,15 @@ class MyGardn extends Component {
   render() {
     return (
       <div className='rose-log'>
+        <img src={image} alt='floral print gardening gloves with pruners' />
         <h2>
-          MY ROSE GARDN
+          ROSE LOG
         </h2>
+        <button className='add-log-button'>
+          <Link to={'/add-log/' + this.props.match.params.id}>
+            Add New Log
+          </Link> 
+        </button>
         <ul className='rose-log-list'>
           {this.state.logs.map(log =>
             <LogItem
@@ -58,3 +65,7 @@ class MyGardn extends Component {
 }
 
 export default MyGardn;
+
+MyGardn.defaultProps = {
+  match: {params:{}}
+};

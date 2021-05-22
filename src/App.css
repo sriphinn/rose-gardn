@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+
 .App {
   text-align: center;
 }
@@ -39,15 +41,20 @@ footer a {
 }
 
 footer a:hover {
-  color:#F72777;
+  color:rgb(219, 45, 138);
 }
 
 * { 
   font-family: 'Lato', sans-serif;
 }
 
+h1 {
+  color: rgb(219, 45, 138);
+  font-family: 'Unica One', cursive;
+}
+
 h2 {
-  font-family: 'Courier', monospace;
+  font-family: 'Unica One', cursive;
 }
 
 /* Form  */

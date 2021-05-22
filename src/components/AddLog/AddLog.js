@@ -83,6 +83,7 @@ class AddLog extends Component {
               <option value='Misc'>Misc</option>
             </select>
           </div>
+          <br/>
           <div>
             <label htmlFor='Name'>
               Notes
@@ -91,7 +92,6 @@ class AddLog extends Component {
               type='text'
               name='notes'
               id='notes'
-              placeholder='notes'
             />
           </div>
           <div className='date-added'>

@@ -18,6 +18,11 @@ a:hover {
   justify-content: space-between;
   display: none;
 }
+
+.hamburger li {
+  background-color: rgb(219, 45, 138);;
+}
+
 .line {
   width: 20px;
   height: 2px;
@@ -40,6 +45,16 @@ a:hover {
 }
 .nav-item {
   margin: 0 10px;
+  background-color: white;
+}
+
+.nav-logo {
+  display: flex;
+}
+
+.nav-logo > * {
+  display: inline-block;
+  margin-right: 5%;
 }
 
 @media screen and (max-width: 900px) {
@@ -55,16 +70,26 @@ a:hover {
     top: 20px;
     display: none;
     padding: 20px;
+    margin-top: 20px;
+    z-index: 1;
   }
+
+  .nav-item {
+    background-color: lightpink;
+    margin: 0;
+  }
+
   .hamburger {
     display: flex;
     height: 20px;
     padding-right: 10px;
   }
+
   .hamburger:hover + .nav,
   .nav:hover {
     display: block;
   }
+
   .nav-item {
     width: 100%;
     text-align: center;

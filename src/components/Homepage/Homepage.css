@@ -14,7 +14,7 @@ html {
 }
 
 .header-container img {
-  height: 75%;
+  height: auto;
   width: 100%;
   position: relative;
   align-items: center;

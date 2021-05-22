@@ -36,7 +36,7 @@ class DeleteLog extends Component {
     const error = this.state.error
     return (
       <div className='delete-log'>
-        <h2>Are you sure you want to delete this log?</h2>
+        <h3>Are you sure you want to delete this log?</h3>
         
           <div className='delete-log-error' role='alert'>
           { error && <p>{ error.message }</p>}

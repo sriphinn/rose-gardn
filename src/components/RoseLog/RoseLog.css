@@ -1,7 +1,20 @@
-.rose-log {
+/* .rose-log {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   margin-bottom: 30px;
+} */
+
+.add-log-button {
+  width: fit-content;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
+img {
+  height: auto;
+  width: 100%;
+  position: relative;
+  align-items: center;
+} 
 
