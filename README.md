@@ -50,7 +50,7 @@ In the ROSEGARDN users can add their roses and keep a log of activities for each
 
 ## Roadmap
 
-See the [open issues](https://github.com/sriphinn/prosm/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/sriphinn/rose-gardn/issues) for a list of proposed features (and known issues).
 
 ## Contact
 
@@ -58,6 +58,6 @@ psrip001@gmail.com
 
 Portfolio: https://phinn.dev
 
-Project Link: [https://github.com/sriphinn/prosm](https://github.com/sriphinn/rose-gardn)
+Project Link: [https://github.com/sriphinn/rose-gardn](https://github.com/sriphinn/rose-gardn)
 
 Project API Link: [https://github.com/sriphinn/rose-gardn-api](https://github.com/sriphinn/rose-gardn-api)
