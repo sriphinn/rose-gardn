@@ -11,8 +11,7 @@ class AddRose extends Component {
   static contextType = AppContext;
 
   state = {
-    error: null,
-    // fileInputState = ''
+    error: null
   };
 
   handleSubmit = e => {

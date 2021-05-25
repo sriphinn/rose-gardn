@@ -13,6 +13,8 @@ In the ROSEGARDN users can add their roses and keep a log of activities for each
 
 [Check out the live app here.](https://rose-gardn-app.vercel.app/)
 
+[Backend documentation and code.](https://github.com/sriphinn/rose-gardn-api)
+
 ### Built With
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)

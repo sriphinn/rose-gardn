@@ -21,7 +21,6 @@ class DeleteRose extends Component {
       }
     })
       .then(data => {
-        // callback(this.props.match.params.id)
         this.props.history.push('/mygardn')
       })
       .catch(error => {

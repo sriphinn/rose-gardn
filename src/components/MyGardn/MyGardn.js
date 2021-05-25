@@ -50,6 +50,7 @@ class MyGardn extends Component {
           )}
         </ul>
         <button className='add-rose-button'>
+          <p></p>
           <Link to='/add-rose'>
             Add New Rose
           </Link> 

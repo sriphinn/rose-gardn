@@ -19,7 +19,7 @@ class Homepage extends Component {
           <p>
             ROSE GARDN is an app for <br/>
             rosarians, obsessed rose addicts and casual rose enthusiasts <br/>
-            to share and keep track of the roses in their gardens.<br /> 
+            to keep track of the roses in their gardens.<br /> 
           </p>
         </section>
 
@@ -33,13 +33,17 @@ class Homepage extends Component {
 
         <section id='signin'>
         <h3>
-            Join now to share your love of roses with the community!
-          </h3>
+            Join now to start tracking your roses!
+            </h3>    
+            <br/>
+            After you create your account, <Link to='/login'>login</Link> <br/>
+            and start by adding roses with the Add Rose button.<br/>
+            Once it is added, view and expand the log by clicking View Log on each rose.<br/>
           <button id='sign-in'>
             <Link to='/signup'>Sign Up</Link>
           </button>
           <h3>
-            Or feel free to peruse the ROSE GARDN before signing up.
+            Or feel free to peruse the ROSEGARDN in the demo account before signing up.
           </h3>
           <button id='login'>
             <Link to='/login'>Demo</Link>
